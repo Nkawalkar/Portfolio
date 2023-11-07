@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet " href="style.css">
+   
+    <script src="https://kit.fontawesome.com/3d5e28a5a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            
+                 <h1 class="logo"><span>N</span>andini.</h1>
+       
+                <ul id="sidemenu" class="items">
+                    <li><a href="#header"  >Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#Portfolio" >Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>Frontend developer</p>
+            <h1>Hi, I'm <span> Nandini</span> <br>Kawalkar From Dewas</h1>
+          </div>
+         
+        </div>
+    </div>
+   
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an aspiring frontend developer with a passion for<br>creating visually appealing and interactive<br>
+                        web applications. Armed with a <br>solid foundation in <b>HTMl, CSS and JAVASCRIPT</b>
+                        ,I am eager to learn and grow dynamic field.    
+                    </b></p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('project')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><Span>HTML</Span><br>I've learnt Html from <br>quality free resources like YouTube,<br> W3schools and MDN Web Docs</li>
+                                <li><span>CSS</span><br>I've learn Css also from <br>free resources with projects like <br>Netflix Clone and others</li>
+                                <li><span>JAVASCRIPT</span><br>As Javascript is used implement<br> logic in our website of html css, <br>I've done projects in Javascript also</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="project">
+                            <ul>
+                                <li><Span>Netflix Clone</Span><br>I've build this project by Html Css from learning perspective</li>
+                                <li><span>Hunt The Ace(Card Game)</span><br>It is a very interesting basic card game called "Hunt<br>
+                                    The Ace" In which we Have four different cards Which<br>
+                                    is the ace of Spades. In this game user have to guess the<br>
+                                    correct relavent ace of spades. It is build on<br>
+                                    technologies such as Vanilla js, html and css.</li>
+                                <li><span>Chrome Extension</span><br>It is a live Chrome Extension,<br>app to save the links from <br>input and you can also save<br> the current tab and  can delete saved links</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><Span>B.tech in CS(2020-2014)</Span><br>From Mahakal Institute Of Technology And Management, Ujjain <br>with 7.5 cgpa</li>
+                                <li><span>10th (with 90.8%)</span><br>Saraswati Vidya Mandir, Dewas(M.P)
+                                </li>
+                                <li><span>12th (with 87%)</span><br>School Of Excellence, Dewas (M.P)</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="services">
+       <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Development</h2>
+                <p>Create visually appealing and functional websites using HTML, CSS, JavaScript to showcase your brand or personnel projects.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Responsive Design</h2>
+                <p>Ensure your website looks great and functions seamlessly across various devices and screen sezes,providing an optimal user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Interactive Features</h2>
+                <p>implement interactive elements using JavaScript to engage users and enhance the overall interactivity of your website.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+       </div>
+        </div>
+
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="project1.jpg">
+                        <div class="layer">
+                            <h3>Netflix clone</h3>
+                            <p>It is a Netflix Clone by Html and Css</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="project2.jpg">
+                        <div class="layer">
+                            <h3>Hunt The Ace(The Card Game)</h3>
+                            <p>A Card Game by Html, Css and JavaScript</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="project3.jpg">
+                        <div class="layer">
+                            <h3>Chrome Extension</h3>
+                            <p>It is a Deployed chrome Extension called Lead Tracker</p>
+                            <a href="https://github.com/Nkawalkar"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>kawalkarnandini1506@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>9179874683</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Nkawalkar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nandini-kawalkar-18043021a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              
+                        </div>
+                
+                            <a href="Resume_2023.pdf (1).pdf" download class="Download download1">Download</a>
+                    </div>
+                    <div class="contact-right">
+    <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="Download download1">Submit </button>
+    
+    </form>
+    <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+               
+            <div class="copyright">
+                <p>Copyright © Nandini Kawalkar</p>
+            </div>
+                
+        </div>
+        <script src="index.js"></script>
+
+           
+</body>
+</html>                                                                                                         
